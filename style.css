@@ -1,9 +1,13 @@
 body {
-  margin: 5% 7%;
-  font-family: 'Amarante';font-size: 22px;
+  padding: 5% 7%;
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
   background-image: url(media/folhaPreta/folhaPreta.png);
   background-blend-mode:difference;
-  background-size: contain;
+  background-size: cover;
+  border: 10px solid white;
+  border-radius: 5%;
 }
 
 div {
@@ -16,7 +20,7 @@ div {
 }
 
 #info {
-   margin-left: 3%;
+  margin-left: 3%;
   background-color: transparent;
   font-size: 30px;
   color: white;
@@ -31,13 +35,15 @@ div {
 }
 
 .playerIcon img{
+  filter: drop-shadow(20px 15px 10px #000000);
   width: 500px;
   height: 500px;
-  border: white solid 5px;
+  border: white double 10px;
   border-radius: 50%;
 }
 
 .basicInfo {
+  filter: drop-shadow(20px 10px 5px #000000);
   flex-direction: column;
   width: 60%;
   justify-content: flex-start;
@@ -83,6 +89,7 @@ div {
   right: 130px;
 }
 .playerPerks {
+  filter: drop-shadow(20px 10px 5px #000000);
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -108,4 +115,52 @@ div {
   position: absolute;
   bottom: 70px;
   right: 78px;
+}
+
+.extras {
+  display: flex;
+  position: relative;
+}
+
+.skillPage img {
+  filter: invert(1);
+  filter: brightness(50);
+}
+
+.skillPage {
+  filter: drop-shadow(25px 20px 6px #000000);
+  display: flex;
+  position: relative;
+  width: 27%;
+  height:fit-content;
+}
+
+.skills{
+  top: 60px;
+  right: 350px;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  color: white;
+}
+.individualSkill {
+  display: flex;
+  position: relative;
+  width: 315px;
+  justify-content: space-between;
+}
+
+#userSkills {
+  text-align: end;
+  position: relative;
+  display: flex;
+  font-size: 22px;
+  width: 35px;
+  height: fit-content;
+  background-color: transparent;
+  border: none;
+  color: white;
 }
