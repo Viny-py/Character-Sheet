@@ -1,0 +1,111 @@
+body {
+  margin: 5% 7%;
+  font-family: 'Amarante';font-size: 22px;
+  background-image: url(media/folhaPreta/folhaPreta.png);
+  background-blend-mode:difference;
+  background-size: contain;
+}
+
+div {
+  display: flex;
+}
+
+.userInfo {
+  font-size: 30px;
+
+}
+
+#info {
+   margin-left: 3%;
+  background-color: transparent;
+  font-size: 30px;
+  color: white;
+  width: 100%;
+  border: transparent;
+  border-bottom: 2px solid white;
+}
+
+.infonIcon {
+  justify-content: space-between;
+  height: fit-content;
+}
+
+.playerIcon img{
+  width: 500px;
+  height: 500px;
+  border: white solid 5px;
+  border-radius: 50%;
+}
+
+.basicInfo {
+  flex-direction: column;
+  width: 60%;
+  justify-content: flex-start;
+  justify-content: center;
+}
+
+.playerStats {
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.stat {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 5%;
+}
+
+.stat img {
+  height: 175px;
+  width: auto;
+  filter: invert(1);
+}
+
+.statName{
+  position: absolute;
+  bottom: 130px;
+  left: 40%;
+}
+
+.number1 {
+  font-size: 30px;
+  position: absolute;
+  bottom: 32px;
+  right: 69px;
+}
+
+.number2 {
+  font-size: 50px;
+  position: absolute;
+  bottom: 38px;
+  right: 130px;
+}
+.playerPerks {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.perk {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 5%;
+}
+
+.perk img {
+  height: 200px;
+  width: 200px;
+  filter: invert(1);
+}
+
+.number3 {
+  font-size: 50px;
+  position: absolute;
+  bottom: 70px;
+  right: 78px;
+}
