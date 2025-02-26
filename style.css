@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden;
   padding: 3% 7%;
   font-family: "Amarante", serif;
   font-weight: 400;
@@ -26,7 +27,8 @@ input[data-autocompleted] {
 
 .userInfo {
   font-size: 30px;
-
+  word-spacing: 3px;
+  letter-spacing: 5px;
 }
 
 #info {
@@ -39,6 +41,8 @@ input[data-autocompleted] {
   width: 100%;
   border: transparent;
   border-bottom: 2px solid white;
+  word-spacing: 3px;
+  letter-spacing: 5px;
 }
 
 .infonIcon {
@@ -173,6 +177,8 @@ input[data-autocompleted] {
   flex-direction: column;
   flex-wrap: wrap;
   filter: opacity(0.8);
+  word-spacing: .5px;
+  letter-spacing: 3px;
 }
 
 .individualSkill {
@@ -184,7 +190,7 @@ input[data-autocompleted] {
   font-size: 23px;
 }
 
-#userSkills {
+.userSkills {
   text-align: end;
   position: relative;
   display: flex;
@@ -223,6 +229,7 @@ input[data-autocompleted] {
   display: flex;
   position: relative;
   flex-direction: column;
+  margin-bottom: 230px;
 }
 
 .attacks img {
@@ -245,6 +252,7 @@ input[data-autocompleted] {
   position: relative;
   width: 50%;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .secondHalfAttacks {
@@ -259,7 +267,7 @@ input[data-autocompleted] {
   position: relative;
   flex-direction: column;
   height: auto;
-  width: 100%;
+  max-width: fit-content;
 }
 
 #attackItem {  
@@ -270,8 +278,9 @@ input[data-autocompleted] {
   background-color: transparent;
   border: none;
   color: white;
-  margin-left: 25%;
-  margin-right: 10%;
+  letter-spacing: 2px;
+  width: 260px;
+  margin-left: 17%;
 }
 
 .toHitAmount {
@@ -280,7 +289,7 @@ input[data-autocompleted] {
   flex-direction: column;
   height: auto;
   align-items: end;
-  width: 35%;
+  width: 25%;
   margin-right: 5%;
 }
 
@@ -293,7 +302,7 @@ input[data-autocompleted] {
   background-color: transparent;
   border: none;
   color: white;
-  width: 100%;
+  width: 100%
 }
 
 #attackDice {
@@ -304,6 +313,150 @@ input[data-autocompleted] {
   background-color: transparent;
   border: none;
   color: white;
-  margin-right: 20%;
   margin-left: 5%;
+  width: 75%;
+}
+
+.equipmentFeaturesSpells {
+  display: flex;
+  position: relative;
+  justify-content: start;
+  align-items: flex-start;
+  height: 300px;
+  filter: opacity(.7);
+}
+
+.equipmentTable {
+  bottom: 500px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: 3%;
+}
+
+.equipmentTable img {
+  height: 500px;
+  width: 400px;
+  filter: invert(1);
+  filter: brightness(50);
+}
+
+.equipments{
+  display: flex;
+  position: relative;
+
+}
+
+#equipments {
+  display: flex;
+  position: relative;
+  bottom: 440px;
+  margin: 0 10%;
+  
+  min-width: 80%;
+  width: 390px;
+  max-width: 390px;
+
+  min-height: 400px;
+  height: 400px;
+  max-height: 400px;
+
+  background-color: transparent;
+  border: none;
+  color: white;
+
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+  
+}
+
+.featuresTable {
+  bottom: 500px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: 3%;
+}
+
+.featuresTable img {
+  height: 800px;
+  filter: invert(1);
+  filter: brightness(50);
+}
+
+.features{
+  display: flex;
+  position: relative;
+
+}
+
+#features {
+  display: flex;
+  position: relative;
+  bottom: 730px;
+  left: 5px;
+  margin: 0 10%;
+  
+  min-width: 80%;
+  width: 432px;
+  max-width: 432px;
+
+  min-height: 670px;
+  height: 670px;
+  max-height: 670px;
+
+  background-color: transparent;
+  border: none;
+  color: white;
+
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+
+.spellsTable {
+  bottom: 500px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.spellsTable img {
+  height: 800px;
+  filter: invert(1);
+  filter: brightness(50);
+}
+
+.spells{
+  display: flex;
+  position: relative;
+
+}
+
+#spells {
+  display: flex;
+  position: relative;
+  bottom: 730px;
+  margin: 0 10%;
+  right: 5px;
+  
+  min-width: 80%;
+  width: 432px;
+  max-width: 432px;
+
+  min-height: 670px;
+  height: 670px;
+  max-height: 670px;
+
+  background-color: transparent;
+  border: none;
+  color: rgb(255, 255, 255);
+
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
 }
