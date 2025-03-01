@@ -11,7 +11,7 @@
   <div class="infonIcon">
     <div class="basicInfo">
 
-      <form id="userInformation" onsubmit="return false">
+      <form id="userInformation" onsubmit="return false" onkeyup="saveUserInformation()">
 
       <div class="userInfo">
         <label for="cname">Name: </label>
@@ -85,95 +85,95 @@
         <img src="media/Extras/skills.png" alt="Skill page">
         <hr class="skillsLine">
 
-        <form id="skillsNum" onsubmit="return false;">
+        <form id="skillsNum" onsubmit="return false;" onkeyup="saveSkills()" >
 
         <div class="individualSkill">
           <label for="acrobatics">Acrobatics (Dex)</label>
-          <input type="text" name="acrobatics" class="userSkills" value="0">
+          <input type="text" name="acrobatics" class="userSkills" value="0" maxlength="3">
         </div>
 
         <div class="individualSkill">
           <label for="animalHandling">Animal Handling (Wis)</label>
-          <input type="text" name="animalHandling" class="userSkills" value="0">
+          <input type="text" name="animalHandling" class="userSkills" value="0" maxlength="3">
         </div>
         <div class="individualSkill">
           <label for="Athletics">Athletics (Str)</label>
-          <input type="text" name="Athletics" class="userSkills" value="0">
+          <input type="text" name="Athletics" class="userSkills" value="0" maxlength="3">
         </div>
 
         <div class="individualSkill">
           <label for="Arcana">Arcana (Int)</label>
-          <input type="text" name="Arcana" class="userSkills" value="0">
+          <input type="text" name="Arcana" class="userSkills" value="0" maxlength="3">
         </div>
 
         <div class="individualSkill">
           <label for="Deception">Deception (Cha)</label>
-          <input type="text" name="Deception" class="userSkills" value="0">
+          <input type="text" name="Deception" class="userSkills" value="0" maxlength="3">
         </div>
 
         <div class="individualSkill">
           <label for="History">History (Int)</label>
-          <input type="text" name="History" class="userSkills" value="0">
+          <input type="text" name="History" class="userSkills" value="0" maxlength="3">
         </div>
 
         <div class="individualSkill">
           <label for="Insight">Insight (Wis)</label>
-          <input type="text" name="Insight" class="userSkills" value="0">
+          <input type="text" name="Insight" class="userSkills" value="0" maxlength="3">
         </div>
 
         <div class="individualSkill">
           <label for="Intimidation">Intimidation (Cha)</label>
-          <input type="text" name="Intimidation" class="userSkills" value="0">
+          <input type="text" name="Intimidation" class="userSkills" value="0" maxlength="3">
         </div>
 
         <div class="individualSkill">
           <label for="Investigation">Investigation (Int)</label>
-          <input type="text" name="Investigation" class="userSkills" value="0">
+          <input type="text" name="Investigation" class="userSkills" value="0" maxlength="3">
         </div>
 
         <div class="individualSkill">
           <label for="Medicine">Medicine (Wis)</label>
-          <input type="text" name="Medicine" class="userSkills" value="0">
+          <input type="text" name="Medicine" class="userSkills" value="0" maxlength="3">
         </div>
 
         <div class="individualSkill">
           <label for="Nature">Nature (Int)</label>
-          <input type="text" name="Nature" class="userSkills" value="0">
+          <input type="text" name="Nature" class="userSkills" value="0" maxlength="3">
         </div>
 
         <div class="individualSkill">
           <label for="Perception">Perception (Wis)</label>
-          <input type="text" name="Perception" class="userSkills" value="0">
+          <input type="text" name="Perception" class="userSkills" value="0" maxlength="3">
         </div>
 
         <div class="individualSkill">
           <label for="Performance">Performance (Cha)</label>
-          <input type="text" name="Performance" class="userSkills" value="0">
+          <input type="text" name="Performance" class="userSkills" value="0" maxlength="3">
         </div>
 
         <div class="individualSkill">
           <label for="Persuasion">Persuasion (Cha)</label>
-          <input type="text" name="Persuasion" class="userSkills" value="0">
+          <input type="text" name="Persuasion" class="userSkills" value="0" maxlength="3">
         </div>
 
         <div class="individualSkill">
           <label for="Religion">Religion (Int)</label>
-          <input type="text" name="Religion" class="userSkills" value="0">
+          <input type="text" name="Religion" class="userSkills" value="0" maxlength="3">
         </div>
 
         <div class="individualSkill">
           <label for="sleightOfHand">Sleight of Hand (Dex)</label>
-          <input type="text" name="sleightOfHand" class="userSkills" value="0">
+          <input type="text" name="sleightOfHand" class="userSkills" value="0" maxlength="3">
         </div>
 
         <div class="individualSkill">
           <label for="Stealth">Stealth (Dex)</label>
-          <input type="text" name="Stealth" class="userSkills" value="0">
+          <input type="text" name="Stealth" class="userSkills" value="0" maxlength="3">
         </div>
   
         <div class="individualSkill">
           <label for="Survival">Survival (Wis)</label>
-          <input type="text" name="Survival" class="userSkills" value="0">
+          <input type="text" name="Survival" class="userSkills" value="0" maxlength="3">
         </div>
         </form>
       </div>
@@ -215,7 +215,7 @@
             <div class="firstHalfAttacks">
               
               <div class="attackItems">
-                <form id="attackName" onsubmit="return false">
+                <form id="attackName" onsubmit="return false" onkeyup="saveAttacks()">
                 <input type="text" id="attackItem">
                 <input type="text" id="attackItem">
                 <input type="text" id="attackItem">
@@ -229,7 +229,7 @@
               </div>
 
               <div class="toHitAmount">
-                <form id="toHitNum" onsubmit="return false">
+                <form id="toHitNum" onsubmit="return false" onkeyup="saveToHitNum()">
                 <input type="text" id="toHitAmount">
                 <input type="text" id="toHitAmount">
                 <input type="text" id="toHitAmount">
@@ -245,7 +245,7 @@
             </div>
 
             <div class="secondHalfAttacks">
-              <form id="attackDiceNum" onsubmit="return false">
+              <form id="attackDiceNum" onsubmit="return false" onkeyup="saveAttackDiceNum()">
               <input type="text" id="attackDice">
               <input type="text" id="attackDice">
               <input type="text" id="attackDice">
@@ -271,28 +271,26 @@
     <div class="equipmentTable">
       <img src="media/Extras/equipment.png" alt="Equipment table">
       <div class="equipments">
-        <textarea id="equipments"></textarea>
+        <textarea id="equipments" onkeyup="saveEquipmentFeaturesSpells()"></textarea>
       </div>
     </div>
 
     <div class="featuresTable">
       <img src="media/Extras/features.png" alt="Features table">
       <div class="features">
-        <textarea id="features"></textarea>
+        <textarea id="features" onkeyup="saveEquipmentFeaturesSpells()"></textarea>
       </div>
     </div>
 
     <div class="spellsTable">
       <img src="media/Extras/spells.png" alt="Features table">
       <div class="spells">
-        <textarea id="spells"></textarea>
+        <textarea id="spells" onkeyup="saveEquipmentFeaturesSpells()"></textarea>
       </div>
     </div>
 
   </div>
 
-  <br><br><br><br><br><br><br><br><br><br><br>
-  <button onclick="saveSheet()"></button>
   <script src="index.js"></script>
 </body>
 </html>
